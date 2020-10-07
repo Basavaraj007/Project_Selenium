@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2020-09-18T22:47:12 IST" name="Default suite" finished-at="2020-09-18T22:47:34 IST" duration-ms="21879">
+    <groups>
+    </groups>
+    <test started-at="2020-09-18T22:47:12 IST" name="Default test" finished-at="2020-09-18T22:47:34 IST" duration-ms="21879">
+      <class name="LoginPageTest.LoginPageTest">
+        <test-method is-config="true" signature="EnvironmentSetup()[pri:0, instance:LoginPageTest.LoginPageTest@222114ba]" started-at="2020-09-18T22:47:12 IST" name="EnvironmentSetup" finished-at="2020-09-18T22:47:12 IST" duration-ms="14" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- EnvironmentSetup -->
+        <test-method is-config="true" signature="URLlaunch()[pri:0, instance:LoginPageTest.LoginPageTest@222114ba]" started-at="2020-09-18T22:47:12 IST" name="URLlaunch" finished-at="2020-09-18T22:47:34 IST" duration-ms="21780" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- URLlaunch -->
+        <test-method signature="UserLogin()[pri:0, instance:LoginPageTest.LoginPageTest@222114ba]" started-at="2020-09-18T22:47:34 IST" name="UserLogin" finished-at="2020-09-18T22:47:34 IST" duration-ms="38" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UserLogin -->
+      </class> <!-- LoginPageTest.LoginPageTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
