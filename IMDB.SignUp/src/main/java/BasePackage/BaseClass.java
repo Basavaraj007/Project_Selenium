@@ -20,6 +20,7 @@ public class BaseClass {
 
 	public void Setup() {
 		System.out.println("Testing");
+		System.out.println("Testing123");///added new line
 		try {
 			fis = new FileInputStream("C:\\Users\\Basavaraj\\eclipse-workspace\\IMDB.SignUp\\src\\main\\java\\BasePackage\\DataFile.properties");
 			prop = new Properties();
