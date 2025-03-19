@@ -7,11 +7,9 @@ import java.util.Properties;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
-import org.testng.annotations.Test;
-
-import PagesPackage.SignUpPage;
 
 public class BaseClass {
 	public static WebDriver driver;
@@ -22,7 +20,10 @@ public class BaseClass {
 		System.out.println("Testing");
 		System.out.println("Testing123");///added new line
 		try {
-			fis = new FileInputStream("C:\\Users\\Basavaraj\\eclipse-workspace\\IMDB.SignUp\\src\\main\\java\\BasePackage\\DataFile.properties");
+		///	fis = new FileInputStream("C:\\Users\\Basavaraj\\eclipse-workspace\\IMDB.SignUp\\src\\main\\java\\BasePackage\\DataFile.properties");
+			
+			fis = new FileInputStream("C:\\Users\\Basavaraj.maddani\\Project_Selenium\\IMDB.SignUp\\src\\main\\java\\BasePackage\\DataFile.properties");
+			
 			prop = new Properties();
 			prop.load(fis);
 			
@@ -31,8 +32,14 @@ public class BaseClass {
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
-		System.setProperty("webdriver.chrome.driver","G:\\\\ChromeDriver\\\\chromedriver.exe");
-		driver = new ChromeDriver();
+		/*System.setProperty("webdriver.chrome.driver","D:\\Basavaraj.M\\chromedriver.exe");
+		driver = new ChromeDriver();*/
+		
+		System.setProperty("webdriver.edge.driver", "D:\\Basavaraj.M\\Drivers\\msedgedriver.exe");
+		
+	    driver = new EdgeDriver();
+	
+		
 	}
 
 	@BeforeTest

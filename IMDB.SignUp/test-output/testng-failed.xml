@@ -8,6 +8,7 @@
           <include name="LaunchURL"/>
           <include name="Tests"/>
           <include name="beforeTest"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- TestPackage.LoginTest -->
     </classes>
